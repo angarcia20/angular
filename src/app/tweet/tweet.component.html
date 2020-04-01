@@ -1,0 +1,15 @@
+<div *ngFor="let tweet of listaTweets">
+    <h1>Tweet</h1>
+    <h2> {{tweet.texto}} </h2>
+    <h1>Autor</h1>
+    <h2>{{tweet.autor}}</h2>
+</div>
+
+<div>
+    <label> Tweet</label>
+    <input type="text" [(ngModel)]= "nuevotweet.texto">
+    <label> Autor</label>
+    <input type="text" [(ngModel)]= "nuevotweet.autor">
+<button (click)="adicionartweet()">Agregar Tweet</button>
+
+</div>
