@@ -9,12 +9,12 @@ import {Tweet} from '../models/tweet.model'
 export class TweetComponent implements OnInit {
   listaTweets = [];
   nuevotweet : Tweet;
-
   constructor() { 
       this.nuevotweet={
       id: this.listaTweets.length,
       texto: "",
-      autor : ""
+      autor : "",
+      fecha : "",
     }
     console.log("LISTA ", this.listaTweets);
 

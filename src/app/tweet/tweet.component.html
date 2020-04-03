@@ -2,13 +2,14 @@
     <div class="titulo">
     <label>Tweet</label>
     </div>
-    <hr>
-        
+    <hr>     
     <h2 style="height: 200px;"> {{tweet.texto}} </h2>
     <div class="autor">
         <hr>
-        <label > Autor: {{tweet.autor}} </label>
-     
+        <label> Autor: {{tweet.autor}} </label>
+    </div>
+    <div class="fecha">
+        <label> Fecha: {{tweet.fecha}} </label>
     </div>
 </div>
 <br>
@@ -22,6 +23,10 @@
     <br>
     <label style="font-weight: bold;"> Autor </label>
     <input type="text" [(ngModel)]= "nuevotweet.autor" style="width: 500px; height: 20px; border-radius: 50px;">
+    <br>
+    <br>
+    <label style="font-weight: bold;"> Fecha </label>
+    <input type="text" [(ngModel)]= "nuevotweet.fecha" style="width: 500px; height: 20px; border-radius: 50px;">
     <br>
     <br>
 <button (click)="adicionartweet()" class="btn1">Agregar Tweet</button>
