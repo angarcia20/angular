@@ -14,8 +14,10 @@ export class TweetComponent implements OnInit {
       id: this.listaTweets.length,
       texto: "",
       autor : "",
-      fecha : "",
+      fecha : ""
     }
+
+
     console.log("LISTA ", this.listaTweets);
 
 
@@ -27,5 +29,7 @@ export class TweetComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
 
 }

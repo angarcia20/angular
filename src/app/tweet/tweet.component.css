@@ -16,26 +16,16 @@ text-align: center;
     background-color: #007bff;
     color: #fff;
   }
-  .publicacion{
-    font-family: sans-serif; 
-    font-size: 12px; 
-    font-weight: 400; 
-    height: 300px;
-    color: #ffffff; 
-    background:#000000;
-    margin: 0 30%;
-    overflow: hidden;
-    border-radius: 25px;
-  }
 
-  .autor{
-text-align: center;
+  .example-card {
+    width: 400px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
   }
-  .titulo{
-      text-align: center;
-      font-size: medium;
+  
+  .example-header-image {
+    background-image: url('https://raiolanetworks.es/blog/wp-content/uploads/twitterlogodown.png');
+    background-size: cover;
   }
-   .fecha{
-     text-align: center;
-     font-weight: 400;
-   }
