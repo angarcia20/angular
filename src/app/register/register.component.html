@@ -1,0 +1,29 @@
+<div class="content">
+    <img src="https://1000marcas.net/wp-content/uploads/2019/11/Logo-Twitter.png" height="15%" width="15%" >
+    <mat-card class="example-card">   
+            <div>
+              <h1 style="text-align: center;">REGISTRARSE</h1> 
+            </div>      
+            <div class="example-form">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Usuario</mat-label>
+                  <input matInput placeholder="username123" [(ngModel)] = "user.username" required>
+                </mat-form-field>   
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Contraseña</mat-label>
+                    <input matInput type="password" [(ngModel)] = "user.password" required>
+                  </mat-form-field>
+
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Fecha</mat-label>
+                    <input matInput type="date" [(ngModel)] = "user.creation_date" required >
+                  </mat-form-field>
+                </div>
+              <div class="example-button-row">
+                <button mat-raised-button color="primary" style="margin-left: 30%;" (click)="userSave()">REGISTRARSE</button>
+              </div>
+      </mat-card>
+
+    </div>
+  
