@@ -4,18 +4,18 @@
             <div>
               <h1 style="text-align: center;">Autenticacion</h1> 
             </div>      
-            <form class="example-form">
+            <div class="example-form">
                 <mat-form-field class="example-full-width">
                   <mat-label>Usuario</mat-label>
-                  <input matInput placeholder="username123">
+                  <input matInput placeholder="username123" [(ngModel)] = "user.username" required>
                 </mat-form-field>             
                 <mat-form-field class="example-full-width">
                     <mat-label>Contraseña</mat-label>
-                    <input matInput type="password">
+                    <input matInput type="password" [(ngModel)] = "user.password" required>
                   </mat-form-field>
-              </form>
+            </div>
               <div class="example-button-row">
-                <button mat-raised-button color="primary" style="margin-left: 30%;">INICIAR SESION</button>
+                <button mat-raised-button color="primary" style="margin-left: 30%;" (click)="login()">INICIAR SESION</button>
               </div>
       </mat-card>
 

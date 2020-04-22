@@ -14,6 +14,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { RegisterComponent } from './register/register.component';
 import { TweetsComponent } from './tweets/tweets.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 
 export const routes: Routes = [
   {path: 'login', component: LoginComponent, pathMatch: 'full'},
@@ -39,6 +41,7 @@ export const routes: Routes = [
     BrowserAnimationsModule,
     MatInputModule,
     MatButtonModule,
+    MatSnackBarModule,
     HttpClientModule
   ],
   providers: [UserService],
