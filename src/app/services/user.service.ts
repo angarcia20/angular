@@ -17,6 +17,13 @@ export class UserService {
     return this.http.post('http://localhost:3000/users/login', user);
   }
 
+  getByUserName(username){
+    return this.http.get('http://localhost:3000/users/username/'+ username);
+  }
+  findOneUser(id){
+    return this.http.get('http://localhost:3000/users/'+ id);
+  }
+
 
 
 

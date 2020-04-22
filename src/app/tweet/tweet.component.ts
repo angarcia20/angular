@@ -13,7 +13,6 @@ export class TweetComponent implements OnInit {
       this.nuevotweet={
       id: this.listaTweets.length,
       texto: "",
-      autor : "",
       fecha : ""
     }
 
