@@ -5,6 +5,7 @@ import { UserService } from '../services/user.service';
 import { Observable } from 'rxjs';
 import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 import { User } from '../models/user';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tweets',
@@ -14,7 +15,7 @@ import { User } from '../models/user';
 export class TweetsComponent implements OnInit {
   listaTweets = [] ;
 
-  constructor(private postService: PostService,  private userService: UserService) { 
+  constructor(private postService: PostService,  private userService: UserService, private router: Router) { 
     this.AllPost();
     this.listaTweets = [] ;
   }
@@ -40,4 +41,10 @@ export class TweetsComponent implements OnInit {
       }
     );
   }
+
+  profile(username: string){
+      this.router.navigate(["/profile", username]);
+  }
+
+
 }

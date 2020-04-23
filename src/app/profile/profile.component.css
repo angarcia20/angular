@@ -1,0 +1,21 @@
+.example-card {
+    max-width: 800px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://pm1.narvii.com/6076/cd6c50625834f88ca45cfb04917a018279c37f16_hq.jpg');
+    background-size: cover;
+  }
+  .content {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgRedonda {
+    width:300px;
+    height:300px;
+    border-radius:150px;
+}

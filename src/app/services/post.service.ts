@@ -12,6 +12,7 @@ export class PostService {
   AllPost(){
     return this.http.get('http://localhost:3000/post'); 
   }
+  
 
 
 }

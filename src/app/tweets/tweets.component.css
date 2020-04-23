@@ -7,11 +7,11 @@
     align-items: center;
   }
   .example-card {
-    max-width: 350px;
+    max-width: 800px;
   }
   
   .example-header-image {
-    background-image: url('https://1000marcas.net/wp-content/uploads/2019/11/Logo-Twitter.png');
+    background-image: url('https://help.twitter.com/content/dam/help-twitter/brand/logo.png');
     background-size: cover;
   }
 

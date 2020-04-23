@@ -1,0 +1,51 @@
+<div class="content">
+<mat-card class="example-card" style="border-radius: 20px;">
+    <mat-card-header>
+    </mat-card-header>
+    <img mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ6qr1C_z-wMgsFU42iEVDCpL0UWs66xsQMdMesLVJm6FjPc8NE&usqp=CAU" width="800px" height="250px" style="border-radius: 20px;">
+
+    <p style="text-align: center;">
+        {{user.username}}
+    </p>
+    <p style="text-align: center;">{{user.creation_date}}</p>
+    <p></p>Este es un ejemplo del perfil de un usuario de twitter el cual tendra una imagen de fondo, una imagen de subfondo
+  </mat-card>
+
+
+
+  <div class="example-card" style="width: 600px;"*ngFor="let tweet of post">
+    <div *ngIf="tweet.idUser == user.username">
+    <p>
+    <br>
+    <mat-card class="example-card" >
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title> {{user.username}}</mat-card-title>
+          <mat-card-subtitle>
+            {{tweet.published_date}}
+          </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            {{tweet.message}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+        </mat-card-actions>
+      </mat-card>
+    </p>
+  </div>
+
+
+</div>
+
+</div>
+
+
+<div STYLE="position:absolute; top:238px; left:730px; visibility:visible; z-index:1" >
+    <img height="100px" SRC="https://pm1.narvii.com/6076/cd6c50625834f88ca45cfb04917a018279c37f16_hq.jpg" width="100px" style="border-radius: 150px; border:5px solid #666;">
+</div>
+
+<!---- <div STYLE="position:absolute; top:161px; left:140px; visibility:visible z-index:1">
+        <img height="200px" SRC="https://pm1.narvii.com/6076/cd6c50625834f88ca45cfb04917a018279c37f16_hq.jpg" width="200px">
+        </div>-->

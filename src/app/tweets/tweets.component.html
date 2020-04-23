@@ -2,22 +2,26 @@
     <div *ngFor="let tweet of listaTweets" class="example-card">
         <p>
         <br>
-        <mat-card class="example-card">
+        <mat-card class="example-card" style="width: 600px; height: 120px;">
             <mat-card-header>
               <div mat-card-avatar class="example-header-image"></div>
               <mat-card-title> {{tweet.idUser}}</mat-card-title>
-              <mat-card-subtitle>{{tweet.published_date}}
-                
+              <mat-card-subtitle>{{tweet.published_date}}     
               </mat-card-subtitle>
             </mat-card-header>
             <mat-card-content>
               <p>
                 {{tweet.message}}
               </p>
+              <div class="example-button-row">
+                <button mat-raised-button color="warn" style="float: right;" (click) = profile(tweet.idUser)>IR AL PERFIL</button>
+              </div>
             </mat-card-content>
+            
             <mat-card-actions>
             </mat-card-actions>
           </mat-card>
+          
         </p>
     </div>
 </div>

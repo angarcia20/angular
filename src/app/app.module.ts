@@ -15,11 +15,14 @@ import {MatButtonModule} from '@angular/material/button';
 import { RegisterComponent } from './register/register.component';
 import { TweetsComponent } from './tweets/tweets.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { ProfileComponent } from './profile/profile.component';
+import { PostService } from './services/post.service';
 
 
 export const routes: Routes = [
   {path: 'login', component: LoginComponent, pathMatch: 'full'},
   {path: 'register', component: RegisterComponent, pathMatch: 'full'},
+  {path: 'profile/:id', component: ProfileComponent, pathMatch: 'full'},
   {path: 'tweets', component: TweetsComponent, pathMatch: 'full'}
 ];
 
@@ -30,7 +33,8 @@ export const routes: Routes = [
     TweetComponent,
     LoginComponent,
     RegisterComponent,
-    TweetsComponent
+    TweetsComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,7 @@ export const routes: Routes = [
     MatSnackBarModule,
     HttpClientModule
   ],
-  providers: [UserService],
+  providers: [UserService, PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
