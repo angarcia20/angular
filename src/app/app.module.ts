@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TweetComponent } from './tweet/tweet.component';
+//import { TweetComponent } from './tweet/tweet.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import { LoginComponent } from './login/login.component';
@@ -17,6 +17,8 @@ import { TweetsComponent } from './tweets/tweets.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { ProfileComponent } from './profile/profile.component';
 import { PostService } from './services/post.service';
+import {MatIconModule} from '@angular/material/icon';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 export const routes: Routes = [
@@ -30,7 +32,7 @@ export const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    TweetComponent,
+  //  TweetComponent,
     LoginComponent,
     RegisterComponent,
     TweetsComponent,
@@ -46,7 +48,9 @@ export const routes: Routes = [
     MatInputModule,
     MatButtonModule,
     MatSnackBarModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconModule,
+    MatExpansionModule
   ],
   providers: [UserService, PostService],
   bootstrap: [AppComponent]

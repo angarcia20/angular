@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
 
   constructor(private userService: UserService, private _snackBar: MatSnackBar) {
     this.user ={
-      id : null,
+      idUser : null,
       username: null,
       password: null,
       creation_date : null

@@ -29,7 +29,7 @@ export class TweetsComponent implements OnInit {
         this.listaTweets =data['data'];
         console.log(data);
         console.log(this.listaTweets);
-       for(let i=0 ; i<this.listaTweets.length ; i++){
+      for(let i=0 ; i<this.listaTweets.length ; i++){
           this.userService.findOneUser(this.listaTweets[i].idUser).subscribe
           (
             data=>{

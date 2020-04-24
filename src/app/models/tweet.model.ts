@@ -1,5 +1,5 @@
 export class Tweet{
-    id: number;
-    texto : string;
-    fecha : string;
+    idUser: number;
+    message : string;
+    published_date : Date;
 }

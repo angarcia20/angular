@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+/*import { Component, OnInit } from '@angular/core';
 import {Tweet} from '../models/tweet.model'
 
 @Component({
@@ -32,3 +32,4 @@ export class TweetComponent implements OnInit {
 
 
 }
+*/

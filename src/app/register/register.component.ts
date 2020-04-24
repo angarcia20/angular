@@ -11,7 +11,7 @@ export class RegisterComponent implements OnInit {
   user: User;
   constructor(private userService: UserService) { 
     this.user ={
-      id : null,
+      idUser : null,
       username: null,
       password: null,
       creation_date : null

@@ -4,12 +4,30 @@
     </mat-card-header>
     <img mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ6qr1C_z-wMgsFU42iEVDCpL0UWs66xsQMdMesLVJm6FjPc8NE&usqp=CAU" width="800px" height="250px" style="border-radius: 20px;">
 
-    <p style="text-align: center;">
-        {{user.username}}
+    <p style="text-align: center; font-weight: 500;">
+       {{user.username}}
     </p>
     <p style="text-align: center;">{{user.creation_date}}</p>
-    <p></p>Este es un ejemplo del perfil de un usuario de twitter el cual tendra una imagen de fondo, una imagen de subfondo
+    <p>Este es un ejemplo del perfil de un usuario de twitter el cual tendra una imagen de fondo, una imagen de subfondo</p>
   </mat-card>
+
+<br>
+<br>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -20,10 +38,21 @@
     <mat-card class="example-card" >
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title> {{user.username}}</mat-card-title>
+
+          <div class="example-button-container">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+            <button mat-fab color="warn" aria-label="Example icon button with a delete icon"(click)="deletePost(tweet.idPost)">
+              <mat-icon>delete</mat-icon>
+            </button>     
+      </div>
+
+          <mat-card-title> {{user.username}}
+          </mat-card-title>
           <mat-card-subtitle>
             {{tweet.published_date}}
           </mat-card-subtitle>
+          
         </mat-card-header>
         <mat-card-content>
           <p>
@@ -33,19 +62,41 @@
         <mat-card-actions>
         </mat-card-actions>
       </mat-card>
-    </p>
+
+
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              INSERTAR TWEET
+            </mat-panel-title>
+            <mat-panel-description>
+              DESPLIEGA PARA CREAR UN TWEET
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <mat-form-field style="margin-left: 100px;">
+            <mat-label>TWEET</mat-label>
+            <input matInput [(ngModel)]= "mensaje">
+          </mat-form-field>
+          <div style="margin-left: 150px;">
+            <button mat-raised-button color="warn" (click)="createPost(tweet.idUser)">PUBLICAR</button>
+          </div>
+    
+    
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+        </mat-expansion-panel>
+      </mat-accordion>
+
   </div>
 
 
-</div>
-
-</div>
-
-
-<div STYLE="position:absolute; top:238px; left:730px; visibility:visible; z-index:1" >
+<div STYLE="position:absolute; top:238px; left:850px; visibility:visible; z-index:1" >
     <img height="100px" SRC="https://pm1.narvii.com/6076/cd6c50625834f88ca45cfb04917a018279c37f16_hq.jpg" width="100px" style="border-radius: 150px; border:5px solid #666;">
 </div>
 
 <!---- <div STYLE="position:absolute; top:161px; left:140px; visibility:visible z-index:1">
         <img height="200px" SRC="https://pm1.narvii.com/6076/cd6c50625834f88ca45cfb04917a018279c37f16_hq.jpg" width="200px">
         </div>-->
+
